@@ -354,57 +354,57 @@
 <script type="text/javascript" src="../js/jquery.validate.js"></script>
 <script type="text/javascript" src="../js/messages_zh.js"></script>
 <script type="text/javascript">
-    $.extend($.validator.messages,{
-        required:"必须填写"
-    });
-    $.validator.addMethod("account",function(val){
-        var reg=/^[a-zA-Z0-9]{6,8}$/;
-        return reg.test(val)
-    },"用户名必须→由6-8位字母或者数字组成")
-    $("#myform").validate({
-        debug:true,
-        rules:{
-            username:{
-                required:true
-            },
-            age:{
-                required:true,
-                digits:true
-            },
-            password1:{
-                required:true
-            },
-            password2:{
-                required:true,
-                equalTo:"#first"
-            },
-            extend_field_1:{
-                required:true
-			},
-			extend_field_2:{
-                required:true
-            },
-			extend_field_3:{
-                required:true
-            },
-			extend_field_4:{
-                required:true
-            },
-            extend_field_5:{
-                required:true
-            },
-        },
-        messages:{
-            sex:{
-                required:"性别必须填写"
-            },
-            age:{
-                required:"数字必须填写",
-                digits:"年龄必须是整数"
-            }
-        },
+   //  $.extend($.validator.messages,{
+   //      required:"必须填写"
+   //  });
+   //  $.validator.addMethod("account",function(val){
+   //      var reg=/^[a-zA-Z0-9]{6,8}$/;
+   //      return reg.test(val)
+   //  },"用户名必须→由6-8位字母或者数字组成")
+   //  $("#myform").validate({
+   //      debug:true,
+   //      rules:{
+   //          username:{
+   //              required:true
+   //          },
+   //          age:{
+   //              required:true,
+   //              digits:true
+   //          },
+   //          password1:{
+   //              required:true
+   //          },
+   //          password2:{
+   //              required:true,
+   //              equalTo:"#first"
+   //          },
+   //          extend_field_1:{
+   //              required:true
+			// },
+			// extend_field_2:{
+   //              required:true
+   //          },
+			// extend_field_3:{
+   //              required:true
+   //          },
+			// extend_field_4:{
+   //              required:true
+   //          },
+   //          extend_field_5:{
+   //              required:true
+   //          },
+   //      },
+   //      messages:{
+   //          sex:{
+   //              required:"性别必须填写"
+   //          },
+   //          age:{
+   //              required:"数字必须填写",
+   //              digits:"年龄必须是整数"
+   //          }
+   //      },
 
-    })
+   //  })
 
 </script>
 
