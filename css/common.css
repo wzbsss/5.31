@@ -538,9 +538,8 @@ input[type="search"] {
     .navbar-nav .dropdown,.navbar-nav .jewel-bnr{
         display: none;
     }
-    .navbar-nav  .jewel-home1{
+    .navbar-nav  .j1{
         display: block;
-        float: right;
         margin-right: 20px;
     }
     .navbar-nav  .jewel-home1:hover .dropdown-menu{
